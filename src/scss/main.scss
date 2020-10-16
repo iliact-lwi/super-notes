@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$first-active-color:rgba(227,112,22,1);
+$second-active-color: rgba(58,58,242,1);
+$border-color: rgba(200,200,210,1);
+$purple: rgba(106,63,204,1);
+
+@import './bootstrap/custom.scss';
+@import './components/global.scss';
+@import './components/navbar/navbar.scss';
+@import './components/home/home.scss';
+@import './components/notes/notes.scss';
+@import './components/footer/footer.scss';
+@import './components/settings/settings.scss';
+@import './components/themes/themes.scss';
+@import './components/suspense/suspense.scss';
+@import './components/about/projects/projects.scss';
+@import './components/about/motivations/motivations.scss';
+@import './components/about/feedback/feedback.scss';

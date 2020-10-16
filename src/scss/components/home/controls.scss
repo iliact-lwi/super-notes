@@ -1,0 +1,29 @@
+#super-notes {
+    .home-widget-controls {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .home-widget-controls-prev {
+        cursor: pointer;
+        color: $dark;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary;
+            color: $light;
+        }
+    }
+
+    .home-widget-controls-next {
+        cursor: pointer;
+        color: $dark;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary;
+            color: $light;
+        }
+    }
+}

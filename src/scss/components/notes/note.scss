@@ -1,0 +1,104 @@
+#super-notes {
+    .note {
+        border-top: 2px solid $border-color;
+        border-bottom: 2px solid $border-color;
+        margin-bottom: 10px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        border-left: 10px solid $border-color;
+
+        @media (max-width: 1199.98px) {
+            padding: 17px 10px;
+        }
+
+        @media (max-width: 991.98px) { 
+            padding: 13px 10px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 9px 8px;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 575.98px) { 
+            padding: 5px 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .note-complated {
+        border-left: 10px solid $success !important;
+        background-color: rgb(214, 255, 222);
+    }
+
+    .note-current {
+        border-left: 10px solid $primary !important;
+        background-color: rgba(185,203,239,1);
+    }
+
+    .note-info {
+        width: 90%;
+    }
+
+    .note-title {
+        font-size: 25px;
+        font-weight: 600;
+        color: $dark;
+        width: 100%;
+        word-wrap: break-word;
+        text-align: justify;
+
+        @media (max-width: 1199.98px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 991.98px) {
+            font-size: 19px;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575.98px) { 
+            font-size: 14px;
+        }
+    }
+
+    .note-text {
+        font-size: 20px;
+        color: $dark;
+        padding: 30px;
+        width: 100%;
+        word-wrap: break-word;
+        text-align: justify;
+
+        @media (max-width: 1199.98px) {
+            padding: 20px;
+            font-size: 19px;
+        }
+
+        @media (max-width: 991.98px) {
+            padding: 13px;
+            font-size: 17px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding: 5px; 
+            font-size: 13px;
+        }
+    }
+
+    .note-control {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,77 @@
+$info: rgba(227,112,22,1);
+
+@import '~bootstrap/scss/bootstrap';
+
+// navbar
+.navbar {
+    padding: 0px;
+
+    @media (max-width: 991.98px) { 
+        padding: 10px;
+    }
+}
+
+.navbar-nav {
+    @media (max-width: 991.98px) { 
+        & > a:first-child {
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        & > a:first-child {
+            margin-top: 15px;
+        }
+    }
+
+    @media (max-width: 575.98px) { 
+        & > a:first-child {
+            margin-top: 10px;
+        }
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $first-active-color;
+}
+
+.navbar-dark  {
+    .navbar-nav {
+        .nav-link.active {
+            position: relative;
+            background-color: $first-active-color;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 4px;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            padding: 20px 30px;
+
+            @media (max-width: 991.98px) { 
+                padding: 15px 25px;
+            }
+        
+            @media (max-width: 767.98px) {
+                padding: 10px 20px;
+            }
+        
+            @media (max-width: 575.98px) { 
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+
+
