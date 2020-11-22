@@ -1,1 +1,108 @@
+@import './global.scss';
 @import './home.scss';
+@import './tooltip.scss';
+
+#super-notes {
+    .themes-universal-title {
+        font-size: 25px;
+        color: $dark;
+        padding: 20px 0px;
+
+        @media (max-width: 1199.98px) {
+            font-size: 23px;
+            padding: 15px 0px;
+        }
+
+        @media (max-width: 991.98px) { 
+            font-size: 20px;
+            padding: 12px 0px;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 19px;
+            padding: 10px 0px;
+        }
+
+        @media (max-width: 575.98px) { 
+            font-size: 17px;
+            padding: 8px 0px;
+        }
+    }
+
+    .themes-universal-subtitle {
+        padding: 20px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background-color: $global-theme-white-snow;
+
+        @media (max-width: 1199.98px) {
+            padding: 17px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 991.98px) { 
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 575.98px) { 
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .themes-universal-subtitle-text {
+        font-size: 21px;
+        font-weight: 600;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1199.98px) {
+            font-size: 19px;
+        }
+
+        @media (max-width: 991.98px) { 
+            font-size: 17px;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 575.98px) { 
+            font-size: 13px;
+        }
+    }
+
+    .themes-universal-subtitle-current {
+        font-size: 17px;
+        font-weight: 400;
+        padding-top: 15px;
+
+        @media (max-width: 1199.98px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 991.98px) { 
+            font-size: 15px;
+            padding-top: 12px;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 12px;
+            padding-top: 10px;
+        }
+
+        @media (max-width: 575.98px) { 
+            font-size: 10px;
+            padding-top: 8px;
+        }
+    }
+}

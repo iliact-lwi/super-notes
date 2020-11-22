@@ -5,25 +5,30 @@
         width: 100%;
     }
 
-    .home-widget-controls-prev {
+    .home-widget-controls-button {
         cursor: pointer;
         color: $dark;
         border-radius: 12px;
+    }
 
+    .home-widget-controls-hover-active {
         &:hover {
             background-color: $primary;
             color: $light;
         }
     }
 
-    .home-widget-controls-next {
-        cursor: pointer;
-        color: $dark;
-        border-radius: 12px;
-
+    .home-widget-controls-hover-disable {
         &:hover {
-            background-color: $primary;
+            background-color: $secondary;
             color: $light;
         }
+    }
+
+    .home-widget-controls-current-slide {
+        color: $dark;
+        cursor: default;
+        font-weight: 600;
+        padding-top: 8px;
     }
 }

@@ -14,6 +14,7 @@ import {
     SETTINGS_HOME_NOTES_IN_SLIDE,
     SETTINGS_HOME_SHOW_DATE,
     SETTINGS_HOME_SHOW_TIME,
+    SETTINGS_GLOBAL_THEME,
     SETTINGS_HOME_THEME_WIDGET,
     SETTINGS_HOME_THEME_CURRENT,
     SETTINGS_HOME_THEME_TIME_DATE 
@@ -61,6 +62,7 @@ export type settingsStateType = {
     homeThemeWidget: string;
     homeThemeCurrent: string;
     homeThemeTimeDate: string;
+    globalTheme: string;
 }
 
 // #
@@ -137,6 +139,11 @@ type settingsHomeShowDateActionType = {
 type settingsHomeShowTimeActionType = {
     type: typeof SETTINGS_HOME_SHOW_TIME;
     action: boolean;
+}
+
+type settingsGlobalThemeActionType = {
+    type: typeof SETTINGS_GLOBAL_THEME;
+    theme: string;
 }
 
 type settingsHomeThemeWidgetActionType = {
@@ -259,6 +266,13 @@ export const settingsHomeShowTime = (action: boolean): settingsHomeShowTimeActio
     }
 }
 
+export const settingsGlobalTheme = (theme: string): settingsGlobalThemeActionType => {
+    return {
+        type: SETTINGS_GLOBAL_THEME,
+        theme: theme
+    }
+}
+
 export const settingsHomeThemeWidget = (theme: string): settingsHomeThemeWidgetActionType => {
     return {
         type: SETTINGS_HOME_THEME_WIDGET,
@@ -320,6 +334,7 @@ noteCustomFilterActionType |
 settingsHomeNotesInSlideActionType | 
 settingsHomeShowDateActionType | 
 settingsHomeShowTimeActionType |
+settingsGlobalThemeActionType |
 settingsHomeThemeWidgetActionType |
 settingsHomeThemeCurrentActionType |
 settingsHomeThemeTimeDateActionType;

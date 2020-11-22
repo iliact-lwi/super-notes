@@ -8,10 +8,10 @@ type propsType = {
 
 const ThemeHomeComponent: React.FunctionComponent<propsType> = ({ title, applied, onClick }) => {
     return (
-        <div className="themes-home-universal">
-            <div className="themes-home-title-universal">
+        <div className="themes-universal-subtitle">
+            <div className="themes-universal-subtitle-text">
                 <span>{ title }</span>
-                <span className="themes-home-current-universal">Applied theme: <span style={{fontWeight: "bold", textDecoration: "underline"}}>{ applied }</span></span>
+                <span className="themes-universal-subtitle-current">Applied theme: <span style={{fontWeight: "bold", textDecoration: "underline"}}>{ applied }</span></span>
             </div>
             <div className="themes-home-main-universal" onClick={ onClick }>
                 <div data-type="dark" className="themes-home-main-item-universal themes-home-main-item-dark-universal">Dark theme</div>

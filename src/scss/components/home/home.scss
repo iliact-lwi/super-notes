@@ -32,4 +32,19 @@
             padding-top: 20px;
         }
     }
+
+    .dark {
+        background-color: $dark;
+        color: $light;
+    }
+
+    .light {
+        background-color: $light;
+        color: $dark;
+    }
+
+    .purple {
+        background-color: $purple;
+        color: $light;
+    }
 }

@@ -4,6 +4,7 @@ import {
     SETTINGS_HOME_NOTES_IN_SLIDE, 
     SETTINGS_HOME_SHOW_DATE, 
     SETTINGS_HOME_SHOW_TIME,
+    SETTINGS_GLOBAL_THEME,
     SETTINGS_HOME_THEME_WIDGET,
     SETTINGS_HOME_THEME_CURRENT,
     SETTINGS_HOME_THEME_TIME_DATE 
@@ -12,7 +13,7 @@ import {
 import  { ActionTypes, settingsStateType } from "../actions";
 
 const savedSettings: settingsStateType = JSON.parse(localStorage.getItem('settings') ||
-    "{\"startSlide\": 0, \"endSlide\": 4, \"notesInSlide\": 4, \"showDate\": true, \"showTime\": true, \"homeThemeWidget\": \"dark\", \"homeThemeCurrent\": \"dark\", \"homeThemeTimeDate\": \"dark\"}");
+    "{\"startSlide\": 0, \"endSlide\": 4, \"notesInSlide\": 4, \"showDate\": true, \"showTime\": true, \"globalTheme\": \"white-snow\", \"homeThemeWidget\": \"dark\", \"homeThemeCurrent\": \"dark\", \"homeThemeTimeDate\": \"dark\"}");
 const initialState: settingsStateType = savedSettings;
 
 export const settingsReducer = (state: settingsStateType = initialState, action: ActionTypes) => {
@@ -39,6 +40,11 @@ export const settingsReducer = (state: settingsStateType = initialState, action:
         }
         case SETTINGS_HOME_SHOW_TIME: {
             const currentState = { ...state, showTime: action.action }
+            localStorage.setItem('settings',  JSON.stringify(currentState));
+            return currentState;
+        }
+        case SETTINGS_GLOBAL_THEME: {
+            const currentState = { ...state, globalTheme: action.theme }
             localStorage.setItem('settings',  JSON.stringify(currentState));
             return currentState;
         }

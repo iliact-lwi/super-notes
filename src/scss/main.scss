@@ -3,7 +3,14 @@
 $first-active-color:rgba(227,112,22,1);
 $second-active-color: rgba(58,58,242,1);
 $border-color: rgba(200,200,210,1);
+
 $purple: rgba(106,63,204,1);
+
+$global-theme-white-snow: rgba(245,245,245,1);
+$global-theme-pink-rose: rgba(225,195,195,1);
+$global-theme-warm-lagoon: rgba(195,230,230,1);
+$global-theme-fine-sand: rgba(230,230,190,1);
+$global-theme-call-of-nature: rgba(195,230,190,1);
 
 @import './bootstrap/custom.scss';
 @import './components/global.scss';

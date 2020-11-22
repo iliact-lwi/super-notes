@@ -3,6 +3,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 
+import { useSelector } from "react-redux";
+
+import { rootStateType } from "./store/actions";
+
 import HomePage from "./pages/HomePage";
 import NotesPage from "./pages/NotesPage";
 import ThemesPage from "./pages/ThemesPage";
@@ -17,12 +21,14 @@ import FooterComponent from "./components/footer/FooterComponent";
 import SuspenseComponent from "./components/suspense/SuspenseComponent";
 
 const App: React.FunctionComponent = () => {
+    const globalTheme = useSelector((state: rootStateType) => state.settings.globalTheme);
+
     return (
         <BrowserRouter>
             <Container fluid className="p-0 position-fixed index-100">
                 <NavbarComponent />
             </Container>
-            <Container fluid className="p-0">
+            <Container id="global-theme" fluid className={ ['p-0', globalTheme].join(' ') }>
                 <Switch>
                     <Route component={ HomePage } path="/" exact />
                     <Route component={ NotesPage } path="/notes" />

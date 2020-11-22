@@ -29,6 +29,28 @@
 }
 
 #super-notes {
+    .white-snow {
+        background-color: $global-theme-white-snow;
+    }
+
+    .pink-rose {
+        background-color: $global-theme-pink-rose;
+    }
+
+    .warm-lagoon {
+        background-color: $global-theme-warm-lagoon;
+    }
+
+    .fine-sand {
+        background-color: $global-theme-fine-sand;
+    }
+
+    .call-of-nature {
+        background-color: $global-theme-call-of-nature;
+    }
+}
+
+#super-notes {
     font-family: 'Lato', sans-serif;
 
     .padding-for-page {
@@ -49,20 +71,5 @@
 
     .index-100 {
         z-index: 100;
-    }
-
-    .dark {
-        background-color: $dark;
-        color: $light;
-    }
-
-    .light {
-        background-color: $light;
-        color: $dark;
-    }
-
-    .purple {
-        background-color: $purple;
-        color: $light;
     }
 }
